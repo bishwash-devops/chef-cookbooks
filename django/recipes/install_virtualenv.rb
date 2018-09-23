@@ -8,5 +8,5 @@ package 'python3-pip'
 # execute 'pip3 install virtualenv'
 
 pip3 'virtualenv' do
-	action :install
+	extra_args '--upgrade'
 end
