@@ -5,4 +5,8 @@
 # Copyright:: 2018, The Authors, All Rights Reserved.
 package 'python3-pip'
 
-execute 'pip3 install virtualenv'
+# execute 'pip3 install virtualenv'
+
+pip3 'virtualenv' do
+	action :install
+end

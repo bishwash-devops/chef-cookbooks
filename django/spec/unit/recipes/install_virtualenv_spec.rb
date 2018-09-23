@@ -24,9 +24,9 @@ describe 'django::install_virtualenv' do
     end
 
     it 'installs virtualenv' do
-      expect(chef_run).to run_execute("pip3 install virtualenv")
+      expect(chef_run).to install_pip3("virtualenv")
     end
-    
+
   end
 
   context 'When all attributes are default, on CentOS 7.4.1708' do
