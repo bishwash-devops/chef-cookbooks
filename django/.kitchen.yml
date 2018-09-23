@@ -24,3 +24,10 @@ suites:
       inspec_tests:
         - test/integration/default
     attributes:
+  - name: install_by_pip
+    run_list:
+      - recipe[django::install_by_pip]
+    verifier:
+      inspec_tests:
+        - test/integration/install_by_pip
+    attributes:
